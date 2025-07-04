@@ -1,0 +1,148 @@
+DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./cdns/fm.selectator.jquery.css">
+
+    <link rel="shortcut icon" href="./fav.png" type="image/x-icon">
+
+    <title>ROBOT</title>
+
+</head>
+
+
+
+<body>
+
+    <div class="main__platform-video__intro">
+
+        <div class="main__platform-video">
+
+            <video class="main__platform-video__media" src="https://qxbroker.com/site/img/main_bg.mp4" autoplay muted
+
+                loop></video>
+
+        </div>
+
+    </div>
+
+    <div id="doc__wrapper">
+
+        <div id="title">YQT BOT PRO</div>
+
+        <div id="content__wrapper">
+
+            <div id="banner">
+
+                <img src="./yqt.jpg" alt="" width="100">
+
+            </div>
+
+            <div class="platform__wrapper">
+
+                <select id="platform__box" class="platform__select">
+
+                    <option value="q" data-left="./imgs/qx.png">QUOTEX</option>
+
+                    <option value="p" data-left="./imgs/po.png">POCKET OPTION</option>
+
+                    <option value="b" data-left="./imgs/binomo.png">BINOMO</option>
+
+                    <option value="o" data-left="./imgs/olymp.png">OLYMP</option>
+
+                    <option value="i" data-left="./imgs/iq.png">IQ OPTION</option>
+
+                    <option value="e" data-left="./imgs/ep.jpg">EXPERT OPTION</option>
+
+                </select>
+
+            </div>
+
+            <div class="pair__wrapper">
+
+                <select id="pair__box" class="pair__select">
+
+                </select><br><br>
+
+                <select id="time__box" class="time__select">
+
+                    <option value="a" data-left="./imgs/expire.png">5s</option>
+
+                    <option value="b" data-left="./imgs/expire.png">10s</option>
+
+                    <option value="c" data-left="./imgs/expire.png">15s</option>
+
+                    <option value="d" data-left="./imgs/expire.png">30s</option>
+
+                    <option selected value="e" data-left="./imgs/expire.png">1m</option>
+
+                    <option value="f" data-left="./imgs/expire.png">2m</option>
+
+                    <option value="g" data-left="./imgs/expire.png">5m</option>
+
+                </select>
+
+            </div>
+
+            <div id="trade__wrapper">
+
+                <button id="signal">GET SIGNAL</button>
+
+                <div class="rem__time"></div>
+
+            </div>
+
+            <div id="center">
+
+                <div id="loader"></div>
+
+                <button id="result"></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./cdns/jquery-3.4.1.min.js"></script>
+
+    <script src="./cdns/fm.selectator.jquery.js"></script>
+
+    <script src="./script.js"></script>
+	<dialog id="telegram-popup">
+    <div style="display:flex;justify-content: center;align-items: center;flex-direction:column;gap:10px;padding:3rem;background:#0f2026;border:1px solid white;border-radius:5px">
+        <div style="font-size:30px;margin:1rem 0;font-weight:100;color:#fff;user-select:none;">Join Telegram Channel</div>
+        <div style="text-align:center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="#0088cc">
+                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm4.524 10.633-6.398-3.804c-.672-.402-1.126.016-1.126.828v7.676c0 .812.454 1.23 1.126.828l6.398-3.804c.672-.402.672-1.054 0-1.454z"/>
+            </svg>
+        </div>
+        <div style="color:#fff;text-align:center;margin-top:1rem">
+            Join our Telegram channel to get free auto trading bots and updates!
+        </div>
+        <a href="https://t.me/binaryBeast_02" target="_blank" style="background:#0088cc;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;margin-top:1rem">
+            Join Telegram Channel
+        </a>
+        <button id="close-telegram-popup" style="background:none;border:none;color:white;margin-top:1rem;cursor:pointer">
+            Close
+        </button>
+    </div>
+</dialog>
+
+</body>
+
+
+
+</html>
